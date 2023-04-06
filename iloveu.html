@@ -346,7 +346,17 @@
             }, 10);
         })(document.getElementById('pinkboard'));
     </script>
-</BODY>
- 
+<body onload="addEvent()">
+    <script>
+      function addEvent(){
+         document.body.addEventListener("click", play)
+       }
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+    <audio id="audio" src="sound/September.mp3"></audio>
+    <div class="wrapper">
 </HTML>
  
